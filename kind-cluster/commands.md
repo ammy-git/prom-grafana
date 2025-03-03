@@ -197,5 +197,13 @@ sum(rate(container_network_transmit_bytes_total{namespace="default"}[5m])) by (p
 
 ---
 
+```bash
+If your browser restart and u unable to get prometheus or grafana from browser RUN this command again
 
+kubectl port-forward svc/kind-prometheus-kube-prome-prometheus -n monitoring 9090:9090 --address=0.0.0.0 &
+kubectl port-forward svc/kind-prometheus-grafana -n monitoring 3000:80 --address=0.0.0.0 &
+
+Change port setting on your Security Groups
+
+```
 
