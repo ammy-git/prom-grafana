@@ -205,5 +205,9 @@ kubectl port-forward svc/kind-prometheus-grafana -n monitoring 3000:80 --address
 
 Change port setting on your Security Groups
 
+Video Link
+
+https://www.youtube.com/watch?v=DXZUunEeHqM&t=653s
+
 ```
 
